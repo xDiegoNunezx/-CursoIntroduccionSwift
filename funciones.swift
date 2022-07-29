@@ -102,8 +102,8 @@ func calculaPromedio(_ arreglo: [Int]) -> Int {
     return promedio
 }
 
-func estaAprobado(_ calificaciones: [Int]) -> Type {
-    if calcularPromeido(calificaciones) >= 6 {
+func estaAprobado(_ calificaciones: [Int]) -> Bool {
+    if calcularPromedio(calificaciones) >= 6 {
         return true
     } else {
         return false
@@ -113,9 +113,9 @@ func estaAprobado(_ calificaciones: [Int]) -> Type {
 let calificaciones = [10,8,10,10,10]
 let calificaciones2 = [10,5,5,5,5]
 
-print("Tu promedio es \(calcularPromeido(calificaciones))")
+print("Tu promedio es \(calcularPromedio(calificaciones))")
 
-if(estaAprobado) {
+if(estaAprobado(calificaciones)) {
     print("Aprobaste!")
 } else {
     print("Reprobaste 😔")
